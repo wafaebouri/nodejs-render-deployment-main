@@ -14,6 +14,8 @@ app.use(
   })
 );
 
+mongoose.set('strictQuery', true);
+
 mongoose.connect("mongodb://localhost:27017/mydb", {
   useNewUrlParser: true,
   useUnifiedTopology: true
